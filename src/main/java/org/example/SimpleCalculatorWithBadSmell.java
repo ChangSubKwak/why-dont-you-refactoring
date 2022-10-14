@@ -4,7 +4,6 @@ import java.util.*;
 
 public class SimpleCalculatorWithBadSmell {
 
-    // 5. 전역 데이터
     private static StringBuilder sa;
     private static StringBuilder sb;
 
@@ -16,7 +15,6 @@ public class SimpleCalculatorWithBadSmell {
         sa = new StringBuilder();
         sb = new StringBuilder();
 
-        // 1. 기이한 이름
         int thisIsAMysteriousIntVariable1 = 0;
         int thisIsAMysteriousIntVariable2 = 0;
         char thisIsAMysteriousCharVariable3 = ' ';
@@ -29,12 +27,9 @@ public class SimpleCalculatorWithBadSmell {
             temp.append(input.charAt(i));
         }
 
-        // 3. 긴 함수
-        // 4. 긴 매개변수 목록
         thisIsAMysteriousCharVariable3 = getThisIsAMysteriousCharVariable3ButThisMethodNameIsVeryLongAndComplicated(temp, thisIsAMysteriousCharVariable3, sa, sb);
 
         for (i = sa.length() - 1; i >= 0; i--) {
-            // 6. 가변데이터
             thisIsAMysteriousIntVariable1 += (sa.charAt(i) - '0') * (int)Math.pow(10, i);
         }
 
@@ -80,7 +75,6 @@ public class SimpleCalculatorWithBadSmell {
 
     private static char getThisIsAMysteriousCharVariable3ButThisMethodNameIsVeryLongAndComplicated(StringBuilder temp, char thisIsAMysteriousCharVariable3, StringBuilder sa, StringBuilder sb) {
         int i;
-        // 2. 중복코드
         for (i = 0; i < temp.length(); i++) {
             if (temp.charAt(i) == '+') {
                 thisIsAMysteriousCharVariable3 = temp.charAt(i);

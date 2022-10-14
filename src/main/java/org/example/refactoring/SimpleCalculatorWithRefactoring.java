@@ -1,7 +1,5 @@
 package org.example.refactoring;
 
-import org.example.MoneyChangingMachine;
-
 import java.util.*;
 
 public class SimpleCalculatorWithRefactoring {
@@ -16,15 +14,10 @@ public class SimpleCalculatorWithRefactoring {
         input = removeSpace(input);
         operator = extractOperator(input);
         leftOperand = extractLeftOperand(input);
-        rightOperand = getRightOperand(input);
+        rightOperand = extractRightOperand(input);
 
         int result = calculateExpression(leftOperand, operator, rightOperand);
         System.out.print(new BasicExchanger().exchange(result));                                            // displayMode == 0
-//        System.out.print(new BinaryExchanger(new BasicExchanger()).exchange(result));                       // displayMode == 1
-//        System.out.print(new HexExchanger(new BasicExchanger()).exchange(result));                          // displayMode == 2
-//        System.out.print(new DollarExchanger(new BasicExchanger()).exchange(result));                       // displayMode == 3
-//        System.out.print(new BinaryExchanger(new DollarExchanger(new BasicExchanger())).exchange(result));  // displayMode == 4
-//        System.out.print(new HexExchanger(new DollarExchanger(new BasicExchanger())).exchange(result));     // displayMode == 5
 
         sc.close();
     }
@@ -50,7 +43,7 @@ public class SimpleCalculatorWithRefactoring {
         return Integer.valueOf(input.split("[+|\\-|/|\\*]")[0]);
     }
 
-    private static Integer getRightOperand(String input) {
+    private static Integer extractRightOperand(String input) {
         return Integer.valueOf(input.split("[+|\\-|/|\\*]")[1]);
     }
 }

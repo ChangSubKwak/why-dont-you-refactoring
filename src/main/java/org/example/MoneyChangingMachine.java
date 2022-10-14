@@ -1,16 +1,8 @@
 package org.example;
 
 public class MoneyChangingMachine {
-    public String exchangeWonToDollar(int won) {
-        return String.valueOf(Math.round((won / 1434.0) * 10) / 10.0);
-    }
-
-    public String exchangeWonToYen(int won) {
-        return String.valueOf(Math.round((won / 984.0) * 10) / 10.0);
-    }
-
-    public String exchangeWonToYuan(int won) {
-        return String.valueOf(Math.round((won / 199.0) * 10) / 10.0);
+    public String exchangeWonToDecimal(int won) {
+        return String.valueOf(won);
     }
 
     public String exchangeWonToBinary(int won) {
@@ -21,4 +13,14 @@ public class MoneyChangingMachine {
         return Integer.toHexString(won);
     }
 
+    public String exchangeWonToDollarToDecimal(int won) {
+        return String.valueOf((int)(Math.round((won / 1434.0))));
+    }
+
+    public String exchangeWonToDollarToBinary(int won) {
+        return Integer.toBinaryString((int)(Math.round(won / 1434.0)));
+    }
+    public String exchangeWonToDollarToHex(int won) {
+        return Integer.toHexString((int)(Math.round(won / 1434.0)));
+    }
 }

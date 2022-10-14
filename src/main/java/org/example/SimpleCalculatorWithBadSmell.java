@@ -51,46 +51,22 @@ public class SimpleCalculatorWithBadSmell {
         int displayMode = 0;
         switch (displayMode) {
             case 0:
-                System.out.print(result);
+                System.out.print(moneyChangingMachine.exchangeWonToDecimal(result));
                 break;
             case 1:
-                System.out.print(moneyChangingMachine.exchangeWonToDollar(result));
+                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
                 break;
             case 2:
-                System.out.print(moneyChangingMachine.exchangeWonToYen(result));
+                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
                 break;
             case 3:
-                System.out.print(moneyChangingMachine.exchangeWonToYuan(result));
+                System.out.print(moneyChangingMachine.exchangeWonToDollarToDecimal(result));
                 break;
             case 4:
-                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
+                System.out.print(moneyChangingMachine.exchangeWonToDollarToBinary(result));
                 break;
             case 5:
-                result = Integer.valueOf(moneyChangingMachine.exchangeWonToDollar(result));
-                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
-                break;
-            case 6:
-                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYen(result));
-                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
-                break;
-            case 7:
-                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYuan(result));
-                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
-                break;
-            case 8:
-                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
-                break;
-            case 9:
-                result = Integer.valueOf(moneyChangingMachine.exchangeWonToDollar(result));
-                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
-                break;
-            case 10:
-                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYen(result));
-                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
-                break;
-            case 11:
-                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYuan(result));
-                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
+                System.out.print(moneyChangingMachine.exchangeWonToDollarToHex(result));
                 break;
         }
 

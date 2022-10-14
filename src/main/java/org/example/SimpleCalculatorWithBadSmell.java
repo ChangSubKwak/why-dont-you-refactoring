@@ -66,6 +66,30 @@ public class SimpleCalculatorWithBadSmell {
                 System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
                 break;
             case 5:
+                result = Integer.valueOf(moneyChangingMachine.exchangeWonToDollar(result));
+                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
+                break;
+            case 6:
+                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYen(result));
+                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
+                break;
+            case 7:
+                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYuan(result));
+                System.out.print(moneyChangingMachine.exchangeWonToBinary(result));
+                break;
+            case 8:
+                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
+                break;
+            case 9:
+                result = Integer.valueOf(moneyChangingMachine.exchangeWonToDollar(result));
+                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
+                break;
+            case 10:
+                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYen(result));
+                System.out.print(moneyChangingMachine.exchangeWonToHex(result));
+                break;
+            case 11:
+                result = Integer.valueOf(moneyChangingMachine.exchangeWonToYuan(result));
                 System.out.print(moneyChangingMachine.exchangeWonToHex(result));
                 break;
         }

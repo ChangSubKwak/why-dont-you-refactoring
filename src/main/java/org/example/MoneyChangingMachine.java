@@ -1,6 +1,5 @@
 package org.example;
 
-// 7. 뒤엉킨 변경
 public class MoneyChangingMachine {
     public String exchangeWonToDollar(int won) {
         return String.valueOf(Math.round((won / 1434.0) * 10) / 10.0);
